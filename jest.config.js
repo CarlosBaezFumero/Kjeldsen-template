@@ -16,6 +16,7 @@ const customJestConfig = {
     // Handle module aliases (this will be automatically configured for you soon)
     '^@/components/(.*)$': '<rootDir>/components/$1',
     '^@/shared/(.*)$': '<rootDir>/shared/$1',
+    '^@/shared/components/(.*)$': '<rootDir>/shared/components/$1',
     '^@/services/(.*)$': '<rootDir>/services/$1',
     '^@/pages/(.*)$': '<rootDir>/pages/$1',
     '^@/libs/(.*)$': '<rootDir>/libs/$1',

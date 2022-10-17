@@ -4,7 +4,7 @@ import { AccountCircle as AccountCircleIcon, Login as LoginIcon, Logout as Logou
 import { signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
 import { User } from 'next-auth'
-import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
+import SportsSoccerIcon from '@mui/icons-material/SportsSoccer'
 
 interface SignedUserProps {
   user?: User
@@ -66,11 +66,11 @@ export const Header: FC = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" 
-        css={{
-          backgroundColor: 'hotpink'
-        }}
-      >
+      <AppBar
+        position="static"
+        sx={{
+          boxShadow: '0px 0px 0px 0px',
+        }}>
         <Toolbar>
           {/* <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
             <MenuIcon />
@@ -83,7 +83,7 @@ export const Header: FC = () => {
             <SignedUser user={data.user} />
           ) : (
             <Link href="/signin" passHref>
-              <Button startIcon={<LoginIcon />} variant="outlined" color="inherit">
+              <Button startIcon={<LoginIcon />} variant="outlined" color="secondary">
                 Sign In
               </Button>
             </Link>

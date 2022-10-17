@@ -25,7 +25,7 @@
         "pages/*"
       ],
       "@/components/*": [
-        "components/*"
+        "shared/components/*"
       ],
       "@/shared/*": [
         "shared/*"
